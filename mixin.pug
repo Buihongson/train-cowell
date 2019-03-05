@@ -1,0 +1,8 @@
+mixin basic-block(title, decs, type, src)
+    article
+        if type == "icon"
+            i.icon(class=src)
+        else
+            img(src=src alt="")
+        h3= title
+        p= decs

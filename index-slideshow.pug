@@ -1,0 +1,33 @@
+-
+    var slideShow = [{
+        title: "slideshow 1",
+        img: "images/s1.jpg",
+        desc: "slideshow slideshow slideshow slideshow slideshow ",
+        portLink: "http://port.com",
+        purchaseLink: "http://purchase.com",
+    },
+    {
+        title:"slideshow 1",
+        img: "images/s1.jpg",
+        desc: "slideshow slideshow slideshow slideshow slideshow ",
+        portLink: "http://port.com",
+        purchaseLink: "http://purchase.com",
+    },
+    {
+        title:"slideshow 1",
+        img: "images/s1.jpg",
+        desc: "slideshow slideshow slideshow slideshow slideshow ",
+        portLink: "http://port.com",
+        purchaseLink: "http://purchase.com",
+    }]
+
+section.section#slideshow
+    ul.sildeshow
+        each item in slideShow
+            li(style="background:" + item.img)
+                h3
+                    a(href="#")= item.title
+                p= item.desc
+                a(href="#")= item.portLink
+                a(href="#")= item.purchaseLink
+

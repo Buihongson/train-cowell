@@ -1,0 +1,14 @@
+html  
+    head
+        title This is my first Pug file
+        link(href="style.css" rel="stylesheet")
+    body
+        include header.pug
+
+        div.slideshow
+            block slideshow
+
+        main
+            block content
+
+        include footer.pug
