@@ -1,0 +1,44 @@
+/* import */
+@import 'reset';
+@import 'mixin';
+
+/* khai bao bien */
+$font-title:  'Montserrat', sans-serif;
+$font-body: 'Source Sans Pro', sans-serif;
+$font-caption: 'Lato', sans-serif;
+
+/* style mac dinh */
+body {
+  font-family: $font-body;
+  font-size: 14px;
+  color: #848e97;
+}
+
+a {
+
+}
+
+p {
+
+}
+
+/* general style */
+.section {
+  padding: 60px 0 40px;
+  &__title {
+    font-size: 48px;
+    font-family: $font-title;
+    font-weight: bold;
+    margin-bottom: 50px;
+
+    &--white {
+      color: #fff;
+    }
+  }
+}
+.container {
+  margin: 0 15px;
+}
+
+/* import cac thanh phan (component) */
+@import 'pricing';

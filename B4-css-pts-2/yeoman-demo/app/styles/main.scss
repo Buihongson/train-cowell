@@ -1,0 +1,45 @@
+@import 'reset';
+
+body {
+  color: #333333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 16px;
+}
+
+.section {
+  padding: 62px 0 44px;
+
+  .section__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 30px;
+
+    &::after{
+      content: "";
+      height: 2px;
+      width: 44px;
+      margin: 10px auto;
+      background-color: #000;
+      display: block;
+    }
+  }
+}
+
+@media screen and (min-width: 960px) { 
+  .container {
+    margin: 0 32px;
+  }
+}
+
+@import 'services';
+@import 'work';
+@import 'contact';

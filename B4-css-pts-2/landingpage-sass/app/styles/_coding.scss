@@ -1,0 +1,71 @@
+.coding {
+    background-color: #f4f4f4;
+
+    .section__title {
+        text-align: center;
+        margin: 0 60px;
+        box-sizing: border-box;
+    }
+
+    &__container__column {
+        display: flex;
+        margin-bottom: 45px;
+    }
+
+    &__icon {
+        .fas {
+            font-size: 70px;
+        }
+    }
+
+    &__content {
+        margin-left: 30px;
+
+        &__title {
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: $color;
+            font-size: 16px;
+        }
+    }
+
+    &__img {
+        margin: 10px 0 0 20px;
+        // background-size: cover;
+    }
+
+    .section__title__right {
+        display: none;
+    }
+}
+
+@media (min-width: 1170px) {
+    .coding {
+        margin-left: 90px;
+
+        &__img {
+            height: 580px;
+            box-shadow: -2px -6px 25px #828282;
+        }
+
+        .container {
+            display: flex;
+            margin-right: 0;
+        }
+
+        &__container__column {
+            margin-top: 7px;
+        }
+    
+        .section__title--hidden {
+            display: none;
+        } // đặc class ra ngoài
+
+        .codding__right {
+            .section__title__right {
+                display: block;
+                margin-top: 0;
+            }
+        }
+    }
+}

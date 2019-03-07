@@ -1,0 +1,102 @@
+.contact {
+    .contact__form {
+
+        input {
+            width: 100%;
+            height: 31px;
+            margin-bottom: 15px;
+            border: 1px solid #d3d3d3;
+        }
+
+        input::placeholder {
+            text-transform: uppercase;
+            font-weight: 700;
+            padding-left: 9px;
+        }
+
+        .form__message {
+            input {
+                height: 150px;            
+            }
+
+            input::placeholder {
+                text-align: start;
+            }
+        }
+
+        .form__submit--active {
+            margin-top: 3px;
+            border: 1px solid #f9bf34;
+            background-color: #f9bf34;
+            width: 150px;
+            height: 38px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            .btn__submit {
+                font-weight: 700;
+            }
+        }
+    }
+
+    .contact__info {
+        margin-top: 45px;
+
+        .contact__items:nth-child(odd) {
+            text-transform: uppercase;
+            font-weight: 700;
+            padding-bottom: 10px;
+        }
+
+        .contact__items:nth-child(even) {
+            text-transform: capitalize;
+            color: #dcdcdc;
+            padding-bottom: 15px;
+        }
+        
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .contact {
+        .container {
+            margin: 0 180px; 
+            height: 500px;
+        }
+
+        .contact__container {
+            // @include clearfix;
+            
+            display: flex;
+            // justify-content: flex-start;
+            // align-items: flex-start;
+            .contact__form {
+                input {
+                    width: 600px;
+                    height: 31px;
+                    margin-bottom: 15px;
+                    border: 1px solid #d3d3d3;
+                    float: left;
+                }
+
+                input::placeholder {
+                    text-transform: uppercase;
+                    padding-left: 9px;
+                }
+        
+                .form__message {
+                    input {
+                        height: 150px;            
+                    }
+                }
+            }
+    
+            .contact__info {
+                margin-top: 0;
+                margin-left: 30px;
+                float: left;
+            }
+        }
+    }
+}

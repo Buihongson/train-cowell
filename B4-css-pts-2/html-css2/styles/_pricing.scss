@@ -1,0 +1,57 @@
+.pricing {
+    background-color: #4b3c4f;
+    text-align: center;
+    color: #fff;
+
+    &__item {
+        margin: 0 95px 15px;
+        background-color: rgba(#fff, 0.11)
+    }
+
+    &__title {
+        font-size: 24px;
+        padding: 40px 15px 30px;
+        background-color: rgba(#fff, 0.06);
+        text-transform: uppercase;
+    }
+
+    &__number {
+        font-size: 60px;
+        font-family: $font-title;
+        margin: 30px 0 20px;
+    }
+
+    &__caption {
+        color: rgba(#fff, 0.3);
+        text-transform: uppercase;
+    }
+
+    &__details {
+        margin-bottom: 30px;
+    }
+
+    &__purchse {
+        display: inline-block;
+        padding: 15px 40px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        color: #fff;
+        font-size: 15px;
+        background-color: rgba(#fff, 0.15);
+        text-decoration: none;
+        border-radius: 23px;
+    }
+}
+
+@media (min-width: 1170px) {
+    .pricing {
+        &__list {
+            @include clearfix;
+        }
+        &__item {
+            margin: 0;
+            width: 25%;
+            float: left;
+        }
+    }
+}
