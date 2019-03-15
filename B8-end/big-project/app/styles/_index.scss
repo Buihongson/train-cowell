@@ -1,0 +1,160 @@
+.header {
+    // position: fixed;
+    padding: 25px 0;
+    box-sizing: border-box;
+    background-color: $color;
+
+    .logo {
+        float: left;
+    }
+
+    .menu {
+        float: right;
+
+        ul {
+            .active {
+                display: block;
+            }
+        }
+    }
+}
+
+.header__pc {
+    display: none;
+}
+
+.box {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 5px 5px #4a464a;
+
+    &__title {
+        display: inline-block;
+        padding-bottom: 25px;
+        line-height: 1.2;
+    }
+
+    &__body {
+
+        &__row {
+            @include clearfix;
+            padding-bottom: 15px;
+            display: block;
+            
+            label {
+                float: left;
+                width: 60%;
+            }
+            p {
+                float: left;
+            }
+        }
+    }
+
+    &__footer {
+        // display: block;
+        padding-top: 15px;
+        @include clearfix;
+
+        &__btn {
+            float: left;
+        }
+
+        &__btn--active {
+            float: right;
+        }
+    }
+}
+
+.extraArt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+
+    .fas {
+        font-size: 38px;
+        color: #e3e3e3;
+    }
+}
+
+.footer__mb {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.footer__pc {
+    display: none;
+}
+
+@media (min-width: 1366px) {
+    .header__mb {
+        display: none;
+    }
+
+    .footer__mb {
+        display: none;
+    }
+
+    .container { 
+        @include clearfix;
+        margin: 0 75px;
+    }
+
+    .header__pc {
+        display: block;
+        
+        ul {
+
+            li {
+                padding: 0 20px;
+                float: left;
+            }
+        }
+    }
+
+    
+    .layout__body__pc {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        // grid-template-columns: auto auto auto auto;
+        // grid-gap: 3rem;
+        // padding: 1rem 6rem;
+
+        .box {
+            grid-column: span 3;
+            margin: 10px 20px;
+            box-shadow: 1px 5px 5px #cec9ce;
+        }
+
+        .extraArt {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f2f2f2;
+            
+            .fas {
+                font-size: 76px;
+                color: #e3e3e3;
+            }
+        }
+    }
+
+    .footer.footer__mb {
+        display: none;
+    }
+
+    .footer__pc {
+        // display: block;
+
+        img {
+            float: left;
+        }
+
+        h3 {
+            float: right;
+            margin: 30px 0;
+        }
+    }
+}

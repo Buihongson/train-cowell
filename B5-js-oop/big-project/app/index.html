@@ -1,0 +1,96 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>big project</title>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+
+</head>
+
+<body>
+  <section id="container">
+    <section id="editor" class="section">
+      <h3 class="section__title">Editor</h3>
+      <div class="section__body">
+        <div class="row row--top boder--dash">
+          <label for="" for="inputType">Input type </label>
+          <select name="" id="inputType">
+            <option data="0" disabled selected>Choose Input Type</option>
+            <option data="10" data-value="text">text</option>
+            <option data="12" data-value="textarea">textarea</option>
+            <option data="13" data-value="button">button</option>
+            <option data="14" data-value="radio">radio</option>
+            <option data="15" data-value="checkbox">checkbox</option>
+            <option data="17" data-value="weather">weather</option>
+          </select>
+        </div>
+
+        <div class="row">
+          <label for="inputLabel">Label </label>
+          <input type="text" name="" id="inputLabel" class="input-text">
+        </div>
+
+        <div class="box">
+          <div class="row">
+            <label for="name">Name </label>
+            <input type="text" name="name" id="name" class="input-text">
+          </div>
+          <div class="row">
+            <label for="value">Value </label>
+            <input type="text" name="value" id="value" class="input-text">
+          </div>
+
+          <form id="extra">
+            <div class="extra-items" id="frmExtra"></div>
+            <div class="extra__footer">
+              <input type="button" value="Add" id="btnAddRow" class="button">
+            </div>
+          </form>
+        </div>
+      </div>
+      </div>
+      <div class="editor__footer">
+        <input type="button" value="Add to form" id="btnAddForm" class="button">
+      </div>
+      </div>
+    </section>
+
+    <section id="form" class="section">
+      <h3 class="section__title">
+        Form
+        <select id="frmStyle">
+          <option value="">Choose Form style</option>
+          <option value="blue">Blue</option>
+          <option value="red">Red</option>
+        </select>
+      </h3>
+      <div class="section__body">
+        <div class="row border--dash">
+          <label for="inputLabel">Action</label>
+          <input type="text" name="" id="inputLabel" class="input-text">
+        </div>
+        <div id="ctnFrm"></div>
+      </div>
+    </section>
+  </section>
+
+
+
+  <!-- build:js scripts/main.js -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+</body>
+
+</html>

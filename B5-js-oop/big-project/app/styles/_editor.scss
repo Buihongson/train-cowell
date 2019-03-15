@@ -1,0 +1,44 @@
+.editor__footer {
+    text-align: right;
+  
+    a, input {
+      display: inline;
+    }
+  }
+
+.extra {
+    &__items {
+        padding-top: 10px;
+        position: relative;
+    }
+
+    &__item {
+        border-top: 1px dashed $color-border;
+        padding: 20px 0 10px;
+
+        .row {
+            margin-left: 10px;
+
+            input {
+                width: 65%;
+            }
+        }
+
+        .btnRemove {
+            position: absolute;
+            right: 0;
+            top: 10px;
+            // padding-right: 10px;
+            // display: inline-block;
+
+            &:hover {
+                color: $color-main;
+                font-size: 130%;
+            }
+        }
+    }
+
+    &__footer {
+        text-align: right;
+    }
+}

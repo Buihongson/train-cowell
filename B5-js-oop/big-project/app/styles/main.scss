@@ -1,0 +1,117 @@
+/* improt */
+@import 'reset';
+@import 'mixin';
+
+/* declare varity */
+$color-main: #4A90E2;
+$color-text: #848e97;
+$color-border: #979797;
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/* default style */
+body {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: $color-text
+}
+
+/* general style */
+#container {
+  .section {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+    
+    &__title {
+      color: $color-main;
+      font-size: 150%;
+      font-weight: bold;
+      @include clearfix;
+    }
+
+    &__body {
+      border: 1px solid #000;
+      padding: 20px;
+    }
+  }
+}
+
+.input-text {
+  background-color: #EFEFEF;
+  border: 1px solid #E3E3E3;
+  padding: 5px;
+
+  &--area {
+    width: 70%;
+  }
+}
+
+.button {
+  background: #EFEFEF;
+  border: 1px solid #EFEFEF;
+  padding: 5px 20px;
+  border-radius: 0;
+
+  &--touch:hover {
+    background-color: $color-main;
+  }
+}
+
+.boder--dash {
+  border: 1px dashed $color-border;
+}
+
+.box {
+  border: 1px dashed $color-border;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.row {
+  padding: 0 0 10px;
+  display: flex;
+
+  &--top {
+    margin-bottom: 20px;
+  }
+
+  label {
+    flex-basis: 100px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+  input {
+    flex-grow: 0;
+    width: 70%;
+  }
+}
+
+#extra {
+  display: none;
+}
+
+#frmStyle {
+  float: right;
+
+  font-size: 65%;
+}
+
+.change {
+  &--label {
+    color: blue;
+  }
+
+  &--input {
+    background-color: blue;
+  }
+}
+/* import component */
+@import 'editor';

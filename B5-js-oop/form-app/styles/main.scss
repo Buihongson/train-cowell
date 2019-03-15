@@ -1,0 +1,163 @@
+/* import */
+// @import 'reset';
+@import 'mixin';
+
+/* khai bao bien */
+$font-title:  'Montserrat', sans-serif;
+$font-body: 'Source Sans Pro', sans-serif;
+$font-caption: 'Lato', sans-serif;
+
+$color-main: #4A90E2;
+$color-text: #848e97;
+$color-border: #979797;
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* style mac dinh */
+body {
+  font-family: $font-body;
+  font-size: 14px;
+  color: $color-text;
+}
+
+a {
+
+}
+
+p {
+
+}
+
+/* general style */
+
+.border--dash {
+  border-bottom: 1px dashed $color-border;
+  
+}
+
+.box {
+  border: 1px dashed $color-border;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.row {
+  padding: 0 0 10px;
+  @include clearfix;
+  
+  &--top {
+    margin-bottom: 20px;
+  }
+
+  label {
+    float: left;
+    width: 25%;
+  }
+  input {
+    float: left;
+    width: 75%;
+  }
+}
+
+.editor__footer {
+  text-align: right;
+
+  a, input {
+    display: inline;
+  }
+}
+
+#ctnExtra {
+  display: none;
+}
+
+.extra {
+  &-items {
+
+  }
+  &-item {
+    position: relative;
+    border-top: 1px dashed $color-border;
+    padding-top: 10px;
+
+    .row {
+      input {
+        width: 65%;
+      }
+    }
+
+    .btnRemoveExtra {
+      position: absolute;
+      top: 10px;
+      right: 0;
+      display: inline-block;
+      padding: 0 0 15px 15px;
+      color: $color-text;
+      text-decoration: none;
+
+      &:hover {
+        color: $color-main;
+        font-size: 130%;
+      }
+    }
+
+  }
+
+  &__footer {
+    border-top: 1px dashed $color-border;
+    padding-top: 10px;
+    text-align: right;
+
+    input, a {
+      display: inline;
+    }
+  }
+  
+}
+
+.input-text {
+  background-color: #EFEFEF;
+  border: 1px solid #E3E3E3;
+  padding: 5px;
+}
+.button {
+  background: #EFEFEF;
+  border: 1px solid #EFEFEF;
+  padding: 5px 20px;
+  border-radius: 0;
+}
+
+#app {
+  .section {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+
+    &__title {
+      color: $color-main;
+      font-size: 150%;
+      font-weight: bold;
+      @include clearfix;
+    }
+
+    &__body {
+      border: 1px solid $color-border;
+      padding: 20px;
+    }
+  }
+  
+}
+
+/* form */
+#frmStyle {
+  float: right;
+}
+
+/* import cac thanh phan (component) */
+// @import 'coding';
+// @import 'pricing';

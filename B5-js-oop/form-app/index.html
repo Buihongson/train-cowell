@@ -1,0 +1,110 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>html css</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700|Source+Sans+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="scripts/modernizr.js"></script>
+    <!-- endbuild -->
+    
+  </head>
+  <body>
+
+    <section id="app">
+      <section class="section" id="editor">
+        <h3 class="section__title">Editor</h3>
+        <div class="section__body">
+          <div class="row row--top border--dash">
+            <label for="inputType">Input type</label>
+            <select id="inputType">
+              <option value="">Choose Input Type</option>
+              <option value="text">Text</option>
+              <option value="textarea">Textarea</option>
+              <option value="button">Button</option>
+              <option value="radio">Radio</option>
+              <option value="checkbox">Checkbox</option>
+              <option value="weather">Weather</option>
+            </select>
+          </div>
+          <div class="row">
+            <label for="inputLabel">Label</label>
+            <input type="text" name="" id="inputLabel" class="input-text">
+          </div>
+          <div class="box">
+              <div class="row">
+                <label for="inputLabel">Name</label>
+                <input type="text" name="" id="inputName" class="input-text">
+              </div>
+              <div class="row">
+                <label for="inputLabel">Value</label>
+                <input type="text" name="" id="inputValue" class="input-text">
+              </div>
+              <div id="ctnExtra">
+                <div class="extra-items">
+                  <div class="extra-item">
+                    <div class="row">
+                      <label for="inputLabel">Name</label>
+                      <input type="text" name="" class="input-text">
+                    </div>
+                    <div class="row">
+                      <label for="inputLabel">Value</label>
+                      <input type="text" name="" class="input-text">
+                    </div>
+                    <a href="javascript:void(0)" class="btnRemoveExtra">X</a>
+                  </div>
+                  <div class="extra-item">
+                    <div class="row">
+                      <label for="inputLabel">Name</label>
+                      <input type="text" name="" class="input-text">
+                    </div>
+                    <div class="row">
+                      <label for="inputLabel">Value</label>
+                      <input type="text" name="" class="input-text">
+                    </div>
+                    <a href="javascript:void(0)" class="btnRemoveExtra">X</a>
+                  </div>
+                </div>
+                <div class="extra__footer">
+                  <input type="button" value="Add" id="btnAddRow" class="button">
+                </div>
+              </div>
+          </div>
+          <div class="editor__footer">
+            <input type="button" value="Add to form" id="btnAddToFrm" class="button">
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="form">
+        <h3 class="section__title">
+          Form
+          <select id="frmStyle">
+            <option value="">Choose Form style</option>
+            <option value="blue">Blue</option>
+            <option value="red">Red</option>
+          </select>
+        </h3>
+        <div class="section__body">
+          <div class="row border--dash">
+            <label for="inputLabel">Action</label>
+            <input type="text" name="" id="inputLabel" class="input-text">
+          </div>
+          <div id="ctnFrm"></div>
+        </div>
+      </section>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

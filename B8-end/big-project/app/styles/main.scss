@@ -1,0 +1,164 @@
+/* Import */
+@import 'reset';
+@import 'mixin';
+
+/* Declare variable */
+$font-main: 'Montserrat', sans-serif;
+$color: #fff;
+$color-header: #739497;
+$color-box: #7ba3d5;
+$color-aboutus: #000;
+
+/* Default style */
+body {
+    font-family: $font-main;
+    font-size: 14px;
+    background-color: #f2f7f7;
+    color: $color;
+}
+
+a {
+    text-decoration: none;
+    color: #739497;
+}
+
+label {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Generate style */
+.header {
+    height: 66px;
+    color: $color-header;
+    font-weight: 700;
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .menu {
+        position: relative;
+        font-size: 16px;
+
+        &--active a {
+            color: #96d9de;
+        }
+
+        .line {
+            position: absolute;
+            bottom: -25px;
+            margin-left: 8px;
+            width: 100px;
+            height: 2px;
+            background-color: #96d9de;
+
+            &::before {
+                content: '';
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 7px;
+                border-bottom-color: #96d9de;
+                /* background-color: #fff; */
+                border-top-color: $color;
+                border-right-color: $color;
+                border-left-color: $color;
+                position: absolute;
+                top: -14px;
+                left: 43px;
+            }
+        }
+
+        ul li {
+            a:hover {
+                color: #96d9de;
+            }
+        }
+    }
+}
+
+.section {
+    padding: 22px 0 20px;
+
+    &__title {
+        color: $color-aboutus;
+        font-weight: 700;
+        display: block;
+    }
+}
+
+.ticket {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.box {
+    background-color: $color-box;
+    margin-bottom: 22px;
+
+    &__title {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    &__footer {
+        button {
+            border-radius: 5px;
+            padding: 10px 20px;
+            border: 1px solid #dfe6f0;
+
+            &:hover {
+                background-color: #96d9de;
+            }
+        }
+
+        &__btn {
+            background-color: #dfe6f0;
+            color: $color-header;
+        }
+
+        &__btn--active {
+            background-color: #96d9de;
+            color: $color;
+            border-color: #96d9de;
+        }
+
+        a {
+            border-radius: 5px;
+            padding: 10px 20px;
+            border: 1px solid #dfe6f0;
+            font-size: 13px;
+
+            &:hover {
+                background-color: #dfe6f0;
+                color: $color-header;
+            }
+        }
+    }
+}
+
+.footer {
+    text-align: center;
+    height: 100px;
+    background-color: $color;
+    width: 100%;
+
+    img {
+        padding: 15px 0;
+    }
+
+    h3 {
+        color: #000;
+    }
+}
+
+.container {
+    margin: 0 15px;
+}
+
+
+
+/* Import component */
+@import 'index';
+@import 'about';
+@import 'detail';

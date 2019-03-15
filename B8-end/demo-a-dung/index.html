@@ -1,0 +1,85 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>yeo web</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&amp;subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="scripts/modernizr.js"></script>
+    <!-- endbuild -->
+    
+    
+  </head>
+  <body>
+        
+    <div id="app">
+      <header class="header">
+        <div class="app__title"></div>
+        <nav class="main-nav">
+          <ul>
+            <li>
+              <a href="about.html">About us</a>
+            </li>
+            <li>
+              <a href="#">Login</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section class="main">
+        <div class="container" id="ticketCtn">
+          <article class="ticket ticket--template" id="tplTicket">
+            <h3 class="ticket__title"></h3>
+            <div class="ticket__body">
+              <div class="row">
+                <span class="ticket__prop__title">Created date:</span>
+                <span class="ticket__prop__value ticket__created-date"></span>
+              </div>
+              <div class="row">
+                <span class="ticket__prop__title">Due date:</span>
+                <span class="ticket__prop__value ticket__due-date"></span>
+              </div>
+              <div class="row">
+                <span class="ticket__prop__title">Assignee:</span>
+                <span class="ticket__prop__value ticket__assignee"></span>
+              </div>
+            </div>
+            <div class="ticket__footer">
+              <a href="javascript:void(0)" class="button button--done">Done</a>
+              <a href="javascript:void(0)" class="button button--more button--brighter">View more</a>
+            </div>
+          </article>
+          <article class="ticket ticket--adding">
+            <a href="javascript:void(0)" id="btnTicketAdding" class="ticket__btn--adding"><i class="fas fa-plus"></i></a>
+          </article>
+        </div>
+      </section>
+      <footer class="footer">
+          <a href="index.html">
+            <img src="images/logo.png" alt="CO-WELL ASIA">
+          </a>
+          <p class="copyright">Copyright@2019 - CO-WELL ASIA</p>
+      </footer>
+
+    </div>
+
+    <!-- build:js scripts/vendor.js -->	
+    
+      <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+    
+    <!-- endbuild -->	
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

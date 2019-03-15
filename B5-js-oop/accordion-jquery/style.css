@@ -1,0 +1,30 @@
+body { 
+    margin:0; 
+    padding:0; 
+    width: 640px;
+} 
+
+#container {
+    margin: 0 16px;
+    text-align: center;
+}
+
+.accordion { 
+    cursor: pointer;
+    border: 2px solid #000;
+    background-color: blue;
+    color: #fff;
+ }
+
+.content {
+    display: none;
+    transition: 0.5s;
+}
+
+.content:nth-of-type(1) {
+    display: block;
+}
+
+.active {
+    font-weight: 700;
+}
